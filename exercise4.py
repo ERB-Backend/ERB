@@ -7,7 +7,6 @@
 # z = height **2
 # print("square of z is", z**2)
 
-
 words = "Today is a beautiful sunny day! Today is also Sunday!"
 word = words.split()
 count = dict()
@@ -17,6 +16,5 @@ for i in word:
         count[i]=1
     else:
         count[i]+=1
-
 print(word)
 print(count)
