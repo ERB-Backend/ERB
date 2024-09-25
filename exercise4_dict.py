@@ -1,12 +1,3 @@
-# # Write a BMI calculator by user input
-# # BMI formula : Weight (kg) / Height(m)^2
-# #Hint:
-#
-# weight = float(input("Enter your weight"))
-# height = float(input("Enter your height in cm: "))
-# z = height **2
-# print("square of z is", z**2)
-
 # words = "Today is a beautiful sunny day! Today is also Sunday!"
 # word = words.split()
 # count = dict()
@@ -19,11 +10,22 @@
 # print(word)
 # print(count)
 
-test = {
-    "Car": 4,
-    "Bicycle": 2,
-    "Train": "many"
-        }
+# test = {
+#     "Car": 4,
+#     "Bicycle": 2,
+#     "Train": "many"
+#         }
 
-for i in test:
-    print(i, "has", test[i], "wheels")
+
+
+
+# for i in test:
+#     print(i, "has", test[i], "wheels")
+
+transport = {"mode": ["Car", "Bicycle", "Train"],
+             "wheels": [4, 2, "many"]
+             }
+
+for mode, wheels in zip(transport["mode"], transport["wheels"]):
+    # print(f"{mode} has {wheels} wheels")
+    print (mode, "has", wheels, "wheels.")
